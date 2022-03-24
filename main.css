@@ -1,0 +1,95 @@
+:root{
+    --main-color:#00cec9;
+    --main-color-light:#81ecec;
+    --accent-color:#ff7675;
+    --accent-color-light:#55efc4;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(to bottom right,var(--main-color),var(--accent-color));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-title{
+    font-size: 3rem;
+    color: white
+}
+.header,.gorev-form{
+min-height: 20vh;
+margin: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.form-item{
+    padding: .5rem;
+    font-size: 1.5rem;
+    border:none;
+    background-color: rgb(208, 255, 249);
+    outline: none;
+}
+.btn-gorev-ekle{
+    color: var(--main-color);
+    cursor: pointer;/*üzerine geldiğinde el işareti cıkar */
+}
+.btn-gorev-ekle:hover{/* üzerine geldiğinde yapılacaklar*/
+    background-color: var(--accent-color);
+}
+
+.gorev-container{
+    display: flex;
+    justify-content:center ;/*ortaladı*/
+    align-items: center;
+}
+.gorev-listesi{
+    list-style: none;
+    min-width: 40%;
+}
+.gorev-item{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: .5rem;
+    font-size: 1.6rem;
+    background-color: rgb(208, 255, 249);
+    transition: .5s ease-in-out;
+}
+.gorev-tanim{
+    flex: 1;
+    padding: 0.5rem
+}
+.gorev-btn{
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    padding: .3rem;
+    
+}
+.gorev-btn-sil{
+    background-color: rgb(208, 255, 249);
+    /*background-color: var(--accent-color);*/
+}
+.gorev-btn-tamamlandi{
+    /*background-color: var(--accent-color-light);*/
+    background-color: rgb(208, 255, 249);
+}
+.gorev-tamamlandi{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+/*
+butonların tıklanma özelliğini iptal ettik*/
+.fas{
+    pointer-events: none;
+}
+
+.kaybol{
+    transform:scale(0);
+}
