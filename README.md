@@ -1,2 +1,2 @@
-** Web Not Uygulaması 
+**Web Not Uygulaması**
 
