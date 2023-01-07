@@ -1,1 +1,2 @@
-# js-not-defteri
+## Web Not Uygulaması 
+
